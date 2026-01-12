@@ -3,78 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SETOFTHREE | 自然与灵感</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="fonts.googleapis.com" rel="stylesheet">
+    <title>SETOFTHREE</title>
     <style>
+        /* 直接把样式写在文件里，不依赖外部文件 */
         body { 
-            background-color: #F8F9F5; /* 极淡的豆沙绿 */
-            font-family: 'Noto Serif SC', serif;
-            color: #3D4035; /* 深苔藓绿 */
+            margin: 0; 
+            height: 100vh; 
+            display: flex; 
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center; 
+            background-color: #F4F7F2; /* 自然浅绿色 */
+            color: #2F332A; 
+            font-family: "Microsoft YaHei", sans-serif;
         }
-        .nature-card {
-            background: rgba(255, 255, 255, 0.6);
-            backdrop-filter: blur(8px);
-            border: 1px solid rgba(255, 255, 255, 0.8);
-            transition: transform 0.4s ease;
+        h1 { 
+            font-size: 3rem; 
+            letter-spacing: 0.5rem; 
+            font-weight: 300;
+            margin-bottom: 20px;
         }
-        .nature-card:hover {
-            transform: translateY(-5px);
+        .line { 
+            width: 50px; 
+            height: 1px; 
+            background: #2F332A; 
+            margin-bottom: 30px; 
         }
-        .leaf-gradient {
-            background: linear-gradient(135deg, #A8C69F 0%, #7D9D73 100%);
+        p { 
+            font-size: 1.1rem; 
+            letter-spacing: 0.1rem;
+            opacity: 0.7;
         }
     </style>
 </head>
-<body class="min-h-screen flex flex-col items-center justify-center p-8">
-
-    <!-- 主容器 -->
-    <main class="max-w-3xl w-full text-center">
-        
-        <!-- 标志性元素 -->
-        <div class="mb-12 opacity-80">
-            <svg class="mx-auto w-16 h-16" viewBox="0 0 100 100" fill="none" xmlns="www.w3.org">
-                <path d="M50 10C50 10 20 40 20 65C20 81.5 33.5 95 50 95C66.5 95 80 81.5 80 65C80 40 50 10 50 10Z" fill="#A8C69F"/>
-            </svg>
-        </div>
-
-        <!-- 品牌名称 -->
-        <h1 class="text-5xl font-light tracking-widest mb-4">SETOFTHREE</h1>
-        <div class="h-px w-12 bg-[#A8C69F] mx-auto mb-8"></div>
-        
-        <!-- 简介 -->
-        <p class="text-lg leading-relaxed mb-16 max-w-md mx-auto text-gray-500">
-            在自然中寻找秩序，<br>
-            在简洁中回归本真。
-        </p>
-
-        <!-- 导航板块 -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="nature-card p-8 rounded-3xl">
-                <h3 class="text-sm tracking-widest mb-4 opacity-60">SELECTED</h3>
-                <p class="font-medium">短裙</p>
-            </div>
-            <div class="nature-card p-8 rounded-3xl">
-                <h3 class="text-sm tracking-widest mb-4 opacity-60">SELECTED</h3>
-                <p class="font-medium">上衣</p>
-            </div>
-            <div class="nature-card p-8 rounded-3xl">
-                <h3 class="text-sm tracking-widest mb-4 opacity-60">CONTACT</h3>
-                <p class="font-medium">与我联系WHATAPPS  013-7055511</p>
-            </div>
-        </div>
-
-        <!-- 底部联系方式 -->
-        <footer class="mt-24">
-            <div class="flex justify-center space-x-8 text-sm tracking-widest opacity-40">
-                <a href="#" class="hover:opacity-100 transition-opacity">INSTAGRAM SETOFTHREE</a>
-                <a href="#" class="hover:opacity-100 transition-opacity">XHS SETOFTHREE</a>
-                <a href="#" class="hover:opacity-100 transition-opacity">EMAIL C.SIEW.TX8@GMAIL.COM</a>
-            </div>
-            <p class="mt-12 text-[10px] uppercase tracking-[0.2em] opacity-30">© 2026 SETOFTHREE. All Rights Reserved.</p>
-        </footer>
-
-    </main>
-
+<body>
+    <h1>SETOFTHREE</h1>
+    <div class="line"></div>
+    <p>在自然中寻找秩序，在简洁中回归本真</p>
+    
+    <!-- 检查部署时间戳: 2026-01-12 -->
 </body>
 </html>
+
